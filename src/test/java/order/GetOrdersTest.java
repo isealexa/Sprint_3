@@ -20,7 +20,7 @@ public class GetOrdersTest {
     @DisplayName("Get list of orders")
     @Description("The test checks that request get orders return response is contained list of orders")
     public void getOrdersResponseContainsOrders(){
-        OrdersResponse response = orderClient. getOrdersResponse();
+        OrdersResponse response = orderClient.getOrdersResponse();
         OrderDetails[] actualOrdersResponse = response.getOrders();
         assertNotNull(actualOrdersResponse);
     }

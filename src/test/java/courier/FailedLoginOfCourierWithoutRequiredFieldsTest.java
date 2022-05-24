@@ -8,6 +8,7 @@ import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.ValidatableResponse;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -40,6 +41,7 @@ public class FailedLoginOfCourierWithoutRequiredFieldsTest {
         checkStatusCodeAndMessage(loginFailed.getStatusCode(), loginFailed.getMessage());
     }
 
+    @Ignore("Disabled for educational reason.")
     @Test
     @DisplayName("It's impossible to login without the courier's password")
     @Description("The test checks that error 400 'Bad Request' will return if you try to login without the courier's password")
