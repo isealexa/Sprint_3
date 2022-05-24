@@ -41,7 +41,6 @@ public class FailedLoginOfCourierWithoutRequiredFieldsTest {
         checkStatusCodeAndMessage(loginFailed.getStatusCode(), loginFailed.getMessage());
     }
 
-    @Ignore("Disabled for educational reason.")
     @Test
     @DisplayName("It's impossible to login without the courier's password")
     @Description("The test checks that error 400 'Bad Request' will return if you try to login without the courier's password")
